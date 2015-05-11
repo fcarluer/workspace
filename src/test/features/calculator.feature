@@ -31,6 +31,11 @@ Scenario: Calculate 3 plus 3
 		    When I divide them
 		    Then I should see "1".
 		    
+		Scenario: Calculate 4 divided by 2
+		    Given I have "4" and "2"
+		    When I divide them
+		    Then I should see "2".    
+		    
 	  Scenario: Calculate 2 multiplied by 2
 		    Given I have "2" and "2"
 		    When I multiplied them
