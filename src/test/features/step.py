@@ -33,7 +33,11 @@ def given_i_input_group1_less_group1(step):
 @step('I divide them')
 def given_i_input_group1_divided_by_group1(step):
     world.result = world.calc.divide(int(world.x), int(world.y)) 
- 
+
+@step('I multiplied them')
+def given_i_input_group1_multiplied_by_group1(step):
+    world.result = world.calc.multiply(int(world.x), int(world.y)) 
+
 @step(u'I should see "([^"]+)"')
 def result(step, expected_result):
     actual_result = world.result

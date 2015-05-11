@@ -25,4 +25,13 @@ class Calculator(object):
             result = x / y
             return result
         else:
-            raise ValueError        
+            raise ValueError       
+    
+    def multiply(self, x, y):
+        number_types = (int,  float, complex)
+        
+        if isinstance(x, number_types) and isinstance(y,number_types):
+            result = x * y
+            return result
+        else:
+            raise ValueError   
