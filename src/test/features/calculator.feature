@@ -34,4 +34,4 @@ Scenario: Calculate 3 plus 3
 	  Scenario: Calculate 2 multiplied by 2
 		    Given I have "2" and "2"
 		    When I multiplied them
-		    Then I should see "1".
+		    Then I should see "4".
